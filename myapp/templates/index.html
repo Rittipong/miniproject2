@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Games{% endblock %}
+
+{% block content %}
+
+<section class="py-20 bg-cover bg-center" style="background-image: url('{% static 'image/game/BG.png' %}')">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-white font-bold text-5xl leading-tight mb-6"> เล่าก่อนเล่น Black Myth: Wukong </h1>
+                <p class="text-white text-1xl mb-8">ทำความรู้จักกับ Black Myth: Wukong เกมแอ็กชันผจญภัยจากวรรณกรรมจีนคลาสสิก "ไซอิ๋ว"</p>
+                <a href="#"
+                    class="px-6 py-3 bg-white text-blue-900 font-bold rounded-full hover:bg-gray-200 transition duration-200">Read more</a>
+            </div>
+            <div class="md:w-1/2">
+                <a href="#">
+                    <img src="https://storage.googleapis.com/prod-games-on-website-media/contents%2FcontentBody%2F8%2F29%2F2024%2F2b17f5bf-3c5b-4fd4-ae82-d93c6774fefc.webp" alt="Coffee beans"
+                         class="w-full rounded-lg shadow-lg mt-6">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-20">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-8">
+            <span class="text-blue-800 ">Game</span> <span class="text-black">List</span> </h2>
+
+            <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+            
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://www.minecraft.net/content/dam/franchise/experiments/1156543/Hero-Banner_Vanilla_Ultrawide_1920x560.jpg" alt="Coffee"
+                    class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2"> minecraft </h3>
+                    <p class="text-gray-700 text-base">ใน Minecraft การผจญภัยของคุณเริ่มที่จินตนาการของคุณ 
+                        สร้างทุกอย่างที่คุณจินตนาการได้ด้วยทรัพยากรที่มีไม่จำกัดในโหมด Creative หรือออกเดินทางครั้งยิ่งใหญ่ในโหมด Survival...</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-gray-900 mb-2 "> PC,XBOX360,PS5 </span>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Read more</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images5.alphacoders.com/112/1126863.jpg" alt="Coffee"
+                    class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2"> DOOM Eternal </h3>
+                    <p class="text-gray-700 text-base">กองทัพนรกได้รุกรานโลกแล้ว กลายเป็นนักล่าในแคมเปญผู้เล่นเดี่ยวสุดยิ่งใหญ่เพื่อปราบปีศาจข้ามมิติและหยุดยั้งการทำลาย
+                        ล้างมนุษยชาติครั้งสุดท้าย...</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-gray-700 font-medium"> PC,XBOX360,PS5 </span>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images2.alphacoders.com/131/1317789.jpeg" alt="Coffee"
+                    class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2"> Cyberpunk 2077 </h3>
+                    <p class="text-gray-700 text-base">Cyberpunk 2077 เป็นเกมสวมบทบาทแนวแอคชั่นผจญภัยแบบโลกเปิดดำเนินเรื่องในมหานครไนท์ซิตี้ที่คุณ
+                        จะเล่นเป็นทหารรับจ้างไซเบอร์พังก์ที่ไปอยู่ในสถานการณ์ที่สู้เพื่อเป็นหรือตายเพื่อเอาตัวรอด...</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-gray-700 font-medium"> PC,XBOX360,PS5 </span>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://wallpapercave.com/wp/wp7593605.jpg" alt="Coffee"
+                    class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2"> Marvel's Spider-Man Remastered </h3>
+                    <p class="text-gray-700 text-base">Marvel's Spider-Man Remastered สำหรับ PC พัฒนาโดย Insomniac Games ร่วมกับ Marvel 
+                        และปรับแต่งให้เหมาะสมกับ PC โดย Nixxes Software ตัวเกมนำเสนอ Peter Parker...</p>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-gray-700 font-medium"> PC,PS4,PS5 </span>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

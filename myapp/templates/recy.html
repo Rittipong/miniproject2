@@ -1,0 +1,170 @@
+{% extends "homebase.html" %}
+{% load static %}
+
+{% block title %}Cyberpunk 2077{% endblock %}
+
+{% block content %}
+
+<div class="container mx-auto px-4 py-8 flex" style="margin-left: 70px;">
+
+    <!-- วิดีโออยู่ด้านซ้าย -->
+    <div class=" pr-4"> <!-- ลดช่องว่างจาก pr-8 เป็น pr-4 -->
+        <video width="800" height="450" controls style="border-radius: 15px;">
+            <source src="{% static 'videos/2077.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- กรอบรีวิวอยู่ด้านขวา -->
+    <div class="w-1/3">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Cyberpunk 2077</h2>
+            <p class="text-gray-600 mb-2">Platform: PC</p>
+            <p class="text-gray-600 mb-4">Released On: Dec 10, 2020</p>
+
+            <!-- Metascore -->
+            <div class="mb-4">
+                <h3 class="font-semibold">Meta score</h3>
+                <div class="bg-green-500 rounded-lg px-4 p-2 inline-block">
+                    <p class="text-black text-4xl font-bold">86</p>
+                </div>
+                <!-- เพิ่ม margin-top ที่นี่ -->
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:90%"></div>
+                </div>
+                <p class="text-gray-500">Based on 106 Critic Reviews</p>
+            </div>
+            
+
+            <!-- User Score -->
+            <div class="mb-4">
+                <h3 class="font-semibold">User Score</h3>
+                <div class="bg-yellow-500 rounded-full w-16 h-16 flex items-center justify-center inline-block">
+                    <p class="text-black text-4xl font-bold">7.2</p>
+                </div>
+
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-yellow-500 h-2.5 rounded-full" style="width:70%"></div>
+                </div>
+                <p class="text-gray-500">Based on 36,259 User Ratings</p>
+            </div>
+            
+
+            <!-- My Score (rating bar placeholder) -->
+            <div class="mb-4">
+                <h3 class="font-semibold">My Score</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:0%"></div>
+                </div>
+            </div>
+            <a href="comcyber" class="bg-blue-500 text-white px-4 py-2 rounded-lg inline-block">Add My Review</a>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest Critic Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">90</p>
+            <h3 class="text-lg font-semibold">CD-Action</h3>
+            <p class="text-gray-600 text-sm mb-4">The best metaphor for Cyberpunk 2077 is Johnny Silverhand himself. A messiah, a mix of Kurt Cobain and Che Guevara, a talented singer who loves to shape his own legend and has a charming personality but loses the struggle with his own demons. The same goes for the game. It tells a great story and forced me to ask myself difficult questions, but many of its gameplay mechanics do not evolve and its technical state upon release was abysmal. Cyberpunk's true hero is not a person, but Night City - a vibrant, living creature of great diversity. The beauty of the metropolis is striking. [01/2021, p.22]</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>JUL 9, 2021</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">90</p>
+            <h3 class="text-lg font-semibold">IGN Portugal</h3>
+            <p class="text-gray-600 text-sm mb-4">Cyberpunk 2077 is one of the most disturbing and mind-blowing RPGs in history, where every decision has a deep impact on our trail. CD Projekt RED tosses us to the center of a city filled with disgusting delights where every character deserves our attention in an immersive experience and overall, very rewarding. From the sarcastic and shadowy tone imposed by the countless scenes in the game, to the flexibility we have on the choices to face every situation that is presented, Night City is truly memorable. It’s a shame that the countless bugs spoil or diminish the impact of some resounding moments, but we are without a question, in the presence of one of the best games in 2020.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>May 28, 2021</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">86</p>
+            <h3 class="text-lg font-semibold">GAMES.CH</h3>
+            <p class="text-gray-600 text-sm mb-4">Measured against the extreme expectations, Cyberpunk 2077 can't fulfill any of them. But all in all, despite the countless small weaknesses and inconsistences, with interesting characters, great story and dialogues or the freedom concerning gameplay, CD Projekt delivers a unique and great RPG that every fan of the genre needs to play.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Mar 3, 2021</p>
+                <p class="font-semibold">PC/p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest User Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">10</p>
+            <h3 class="text-lg font-semibold">NFA_FUBBA</h3>
+            <p class="text-gray-600 text-sm mb-4">I put 141 hours into my first play-through doing the Nomad story and all of the endings. I'm versed in the lore of the Mike Pondsmith universe and the job they did with world-building is excellent.I'll start off by saying THIS GAME IS A BUGGY MESS but to its credit I have never crashed once in my entire playtime. Floating cheeseburgers and cigarettes; cars clipping and colliding with objects; traffic spontaneously combusting and purchasable vehicles stuck halfway in the ground PLAGUE this game. The CrowbCat video on YouTube says quite a lot about the brokenness of the game. It feels like they had to rebuild from scratch a year from release and rushed something together because whatever they started out with was compromised perhaps. This is perhaps semi-related to current CDProjektRed **** story was worth the waiting since 2013 to get this game.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 6, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-red-500 text-2xl font-bold mb-2">0</p>
+            <h3 class="text-lg font-semibold">LordJodor</h3>
+            <p class="text-gray-600 text-sm mb-4">Gives the feeling of a world that's just a videogame. It does not have the interactivity and immersion that all quality open worlds have in common.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 4, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">10</p>
+            <h3 class="text-lg font-semibold">Strong786</h3>
+            <p class="text-gray-600 text-sm mb-4">I havn't played it before but after the 2.0 update i bought it on ps5 and it is amazing. The graphics the story and the driving. I like it. And i would say it is THE TRUE NEXT GEN GAME i mean games like ragnarok are on last gen and new gen. But because this is so bad for last gen they have completelly ditxhed the last gen after 2.0 and now they take full advantage of next gen. Ps5 has performance mode 60 fos and ray tracing 30 fos woth shadiw raytracing no reflection though. But i like to play performance and it isstable not 60 fos all the time but generally it stays close to 60. So it is smooth enough for me</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 3, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        {% for com in comment %}
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">{{com.score}}</p>
+            <h3 class="text-lg font-semibold">{{com.name}}</h3>
+            <p class="text-gray-600 text-sm mb-4">{{com.des}}</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>{{com.date}}</p>
+                <p class="font-semibold">{{com.platform}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

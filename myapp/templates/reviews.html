@@ -1,0 +1,219 @@
+{% extends "homebase.html" %}
+{% load static %}
+
+{% block title %} Reviews {% endblock %}
+
+{% block content %}
+
+<section class="py-20">
+    <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold mb-8">
+            <span class="text-blue-800">Lists</span> 
+            <span class="text-black">Reviews</span>
+        </h2>
+
+        <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+
+                <!-- Review 1: Minecraft -->
+                <div class="rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <a href="remine">
+                            <img class="w-full"
+                                src="https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg"
+                                alt="Minecraft">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+                        </a>
+
+                        <a href="remine">
+                            <div class="text-sm absolute top-0 right-0 bg-green-500 px-4 text-black rounded-full h-16 w-16 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold">82</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a href="remine"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Minecraft</a>
+                        <p class="text-gray-500 text-sm">Generally Favorable</p>
+                        <p class="text-gray-500 text-sm">Released On: May 9, 2012</p>
+                    </div>
+
+                    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 98%;">
+
+                    <div class="px-6 py-4">
+                        <a href="remine" class="bg-gray-900 text-white px-4 py-2 text-sm font-semibold text-center rounded-md">GAME</a>
+                    </div>
+
+                    <div class="px-6 py-4 flex flex-row items-center">
+                        <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <svg height="13px" width="13px" viewBox="0 0 512 512">
+                                <!-- SVG Icon -->
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Review 2: Best Pizza in Town -->
+                <div class="rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <a href="red">
+                            <img class="w-full"
+                                src="https://images5.alphacoders.com/112/1126863.jpg"
+                                alt="Minecraft">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+                        </a>
+
+                        <a href="red">
+                            <div class="text-sm absolute top-0 right-0 bg-green-500 px-4 text-black rounded-full h-16 w-16 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold">88</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a href="red"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">DOOM Eternal</a>
+                        <p class="text-gray-500 text-sm">Generally Favorable</p>
+                        <p class="text-gray-500 text-sm">Released On: Mar 20, 2020</p>
+                    </div>
+
+                    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 98%;">
+
+                    <div class="px-6 py-4">
+                        <a href="red" class="bg-gray-900 text-white px-4 py-2 text-sm font-semibold text-center rounded-md">GAME</a>
+                    </div>
+
+                    <div class="px-6 py-4 flex flex-row items-center">
+                        <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <svg height="13px" width="13px" viewBox="0 0 512 512">
+                                <!-- SVG Icon -->
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Review 3: Best Salad Images -->
+                <div class="rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <a href="recy">
+                            <img class="w-full"
+                                src="https://images2.alphacoders.com/131/1317789.jpeg"
+                                alt="Minecraft">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+                        </a>
+
+                        <a href="recy">
+                            <div class="text-sm absolute top-0 right-0 bg-green-500 px-4 text-black rounded-full h-16 w-16 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold">92</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a href="recy"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Cyberpunk 2077</a>
+                        <p class="text-gray-500 text-sm">Generally Favorable</p>
+                        <p class="text-gray-500 text-sm">Released On: Sep 26, 2023</p>
+                    </div>
+
+                    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 98%;">
+
+                    <div class="px-6 py-4">
+                        <a href="recy" class="bg-gray-900 text-white px-4 py-2 text-sm font-semibold text-center rounded-md">GAME</a>
+                    </div>
+
+                    <div class="px-6 py-4 flex flex-row items-center">
+                        <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <svg height="13px" width="13px" viewBox="0 0 512 512">
+                                <!-- SVG Icon -->
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <a href="resi">
+                            <img class="w-full"
+                                src="https://wallpapercave.com/wp/wp7593605.jpg"
+                                alt="Minecraft">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+                        </a>
+
+                        <a href="resi">
+                            <div class="text-sm absolute top-0 right-0 bg-green-500 px-4 text-black rounded-full h-16 w-16 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold">87</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a href="resi"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Marvel's Spider-Man Remastered</a>
+                        <p class="text-gray-500 text-sm">Generally Favorable</p>
+                        <p class="text-gray-500 text-sm">Released On: Aug 12, 2022</p>
+                    </div>
+
+                    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 98%;">
+
+                    <div class="px-6 py-4">
+                        <a href="resi" class="bg-gray-900 text-white px-4 py-2 text-sm font-semibold text-center rounded-md">GAME</a>
+                    </div>
+
+                    <div class="px-6 py-4 flex flex-row items-center">
+                        <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <svg height="13px" width="13px" viewBox="0 0 512 512">
+                                <!-- SVG Icon -->
+                            </svg>
+                        </span>
+                    </div>
+                </div> 
+
+                <div class="rounded overflow-hidden shadow-lg">
+                    <div class="relative">
+                        <a href="remk">
+                            <img class="w-full"
+                                src="https://wallpapercave.com/wp/wp8221247.png"
+                                alt="Minecraft">
+                            <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+                        </a>
+
+                        <a href="remk">
+                            <div class="text-sm absolute top-0 right-0 bg-green-500 px-4 text-black rounded-full h-16 w-16 flex flex-col items-center justify-center">
+                                <span class="text-3xl font-bold">81</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="px-6 py-4">
+                        <a href="remk"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Black Myth: Wukong</a>
+                        <p class="text-gray-500 text-sm">Generally Favorable</p>
+                        <p class="text-gray-500 text-sm">Released On: Aug 19, 2024</p>
+                    </div>
+
+                    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 98%;">
+
+                    <div class="px-6 py-4">
+                        <a href="remk" class="bg-gray-900 text-white px-4 py-2 text-sm font-semibold text-center rounded-md">GAME</a>
+                    </div>
+
+                    <div class="px-6 py-4 flex flex-row items-center">
+                        <span class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                            <svg height="13px" width="13px" viewBox="0 0 512 512">
+                                <!-- SVG Icon -->
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

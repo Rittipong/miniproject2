@@ -1,0 +1,169 @@
+{% extends "homebase.html" %}
+{% load static %}
+
+{% block title %}Black Myth: Wukong{% endblock %}
+
+{% block content %}
+
+<div class="container mx-auto px-4 py-8 flex" style="margin-left: 70px;">
+
+    <!-- วิดีโออยู่ด้านซ้าย -->
+    <div class=" pr-4"> <!-- ลดช่องว่างจาก pr-8 เป็น pr-4 -->
+        <video width="800" height="450" controls style="border-radius: 15px;">
+            <source src="{% static 'videos/mk.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- กรอบรีวิวอยู่ด้านขวา -->
+    <div class="w-1/3">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Black Myth: Wukong</h2>
+            <p class="text-gray-600 mb-2">Platform: PC</p>
+            <p class="text-gray-600 mb-4">Released On: Aug 19, 2024</p>
+
+            <!-- Metascore -->
+            <div class="mb-4">
+                <h3 class="font-semibold">Meta score</h3>
+                <div class="bg-green-500 rounded-lg px-4 p-2 inline-block">
+                    <p class="text-black text-4xl font-bold">81</p>
+                </div>
+                <!-- เพิ่ม margin-top ที่นี่ -->
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:85%"></div>
+                </div>
+                <p class="text-gray-500">Based on 89 Critic Reviews</p>
+            </div>
+            
+
+            <!-- User Score -->
+            <div class="mb-4">
+                <h3 class="font-semibold">User Score</h3>
+                <div class="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center inline-block">
+                    <p class="text-black text-4xl font-bold">8.3</p>
+                </div>
+
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:85%"></div>
+                </div>
+                <p class="text-gray-500">Based on 6,112 User Ratings</p>
+            </div>
+            
+
+            <!-- My Score (rating bar placeholder) -->
+            <div class="mb-4">
+                <h3 class="font-semibold">My Score</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:0%"></div>
+                </div>
+            </div>
+            <a href="comblack" class="bg-blue-500 text-white px-4 py-2 rounded-lg inline-block">Add My Review</a>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest Critic Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">80</p>
+            <h3 class="text-lg font-semibold">Movies Games and Tech</h3>
+            <p class="text-gray-600 text-sm mb-4">Black Myth: Wukong is a visually stunning and mechanically sound RPG that offers a fresh spin on a beloved myth. Its engaging combat, especially the epic boss battles, and impressive art direction make it a must-play for fans of action RPGs. However, the game's linear exploration, underwhelming gear system, and occasional technical issues hold it back from being a true masterpiece. For those looking for a challenging action RPG with deep roots in Chinese mythology, Black Myth: Wukong delivers an unforgettable experience, even if it stumbles in a few areas.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Sep 25, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-yellow-500 text-2xl font-bold mb-2">70</p>
+            <h3 class="text-lg font-semibold">IGN Japan</h3>
+            <p class="text-gray-600 text-sm mb-4">Black Myth: Wukong's combat system doesn't have anything that makes it truly unique. The variety in ways to tackle combat is often lacking, and it doesn't feel all that good to play either. That said, the concept of creating openings for the enemy rather than exploiting them is interesting, and by rewarding players who take full advantage of the few chances the game gives you, it makes its boss encounters worthwhile despite its lacking combat system. Character customization and exploration is on the thin side too, and the story is hard to follow if you haven't read Journey to the West. However, the impressive graphics make every moment of the game look like a painting. Experiencing this world based on classic Chinese literature through the game's unique vision is still worth your time.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Sep 17, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">90</p>
+            <h3 class="text-lg font-semibold">GamesGrin</h3>
+            <p class="text-gray-600 text-sm mb-4">Black Myth: Wukong may look like another soulslike on the surface, but in truth, it is a fantastic action RPG with great boss battles, memorable characters, and my favourite mechanic of the year so far, Transformations. You can be a rock with legs!</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Sep 12, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest User Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">10</p>
+            <h3 class="text-lg font-semibold">pxrvn</h3>
+            <p class="text-gray-600 text-sm mb-4">It's a sharming super good game. But the numbers of bosses are big and thereis no story or drama. Only fighting. In general its a good game</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 11, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">9</p>
+            <h3 class="text-lg font-semibold">G305tigma</h3>
+            <p class="text-gray-600 text-sm mb-4">Wukong is my pick for GOTY - not for the story or it's combat but more for the overall experience and beautiful graphics. This is probably the prettiest game I've ever played. I will not be delving into the story. Not that there isn't one however it is hard to follow. The combat is limited to a certain degree in that you only ever use one combo however, there are countless ways to create builds based on the souls you collect, which each grant a unique ability and passive effect, spells, staff stances, armor sets, etc. Every streamer I've seen play the game used different sets of abilities and spells. So, although the combat is limited in some aspects, there are other aspects that make up for it by allowing for more customizable and varied builds seen from player to player. Wukong also encourages experimentation with your builds or changing on-the-fly to coincide with different boss encounters as you can respec at any time. If you can see past the few non-game-breaking flaws, Wukong is an experience that should not be missed.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 11, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">10</p>
+            <h3 class="text-lg font-semibold">Darkseid79</h3>
+            <p class="text-gray-600 text-sm mb-4">Man this one of the greatest action games I've played. The bosses are fun, The combat is just amazing. If you like games like God of War, Dante's Inferno etc you will love this.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 11, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+        {% for com in comment %}
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">{{com.score}}</p>
+            <h3 class="text-lg font-semibold">{{com.name}}</h3>
+            <p class="text-gray-600 text-sm mb-4">{{com.des}}</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>{{com.date}}</p>
+                <p class="font-semibold">{{com.platform}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

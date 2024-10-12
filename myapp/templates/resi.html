@@ -1,0 +1,171 @@
+{% extends "homebase.html" %}
+{% load static %}
+
+{% block title %}Marvel's Spider-Man Remastered{% endblock %}
+
+{% block content %}
+
+<div class="container mx-auto px-4 py-8 flex" style="margin-left: 70px;">
+
+    <!-- วิดีโออยู่ด้านซ้าย -->
+    <div class=" pr-4"> <!-- ลดช่องว่างจาก pr-8 เป็น pr-4 -->
+        <video width="800" height="450" controls style="border-radius: 15px;">
+            <source src="{% static 'videos/si.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- กรอบรีวิวอยู่ด้านขวา -->
+    <div class="w-1/3">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Marvel's Spider-Man Remastered</h2>
+            <p class="text-gray-600 mb-2">Platform:PC</p>
+            <p class="text-gray-600 mb-4">Released On: Aug 12, 2022</p>
+
+            <!-- Metascore -->
+            <div class="mb-4">
+                <h3 class="font-semibold">Meta score</h3>
+                <div class="bg-green-500 rounded-lg px-4 p-2 inline-block">
+                    <p class="text-black text-4xl font-bold">87</p>
+                </div>
+                <!-- เพิ่ม margin-top ที่นี่ -->
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:95%"></div>
+                </div>
+                <p class="text-gray-500">Based on 71 Critic Reviews</p>
+            </div>
+            
+
+            <!-- User Score -->
+            <div class="mb-4">
+                <h3 class="font-semibold">User Score</h3>
+                <div class="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center inline-block">
+                    <p class="text-black text-4xl font-bold">8.3</p>
+                </div>
+
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:90%"></div>
+                </div>
+                <p class="text-gray-500">Based on 1,500 User Ratings</p>
+            </div>
+            
+
+            <!-- My Score (rating bar placeholder) -->
+            <div class="mb-4">
+                <h3 class="font-semibold">My Score</h3>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width:0%"></div>
+                </div>
+            </div>
+            <a href="comspider" class="bg-blue-500 text-white px-4 py-2 rounded-lg inline-block">Add My Review</a>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest Critic Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">80</p>
+            <h3 class="text-lg font-semibold">LEVEL (Czech Republic)</h3>
+            <p class="text-gray-600 text-sm mb-4">The game shows that console ports have really come a long way. Thanks to the improved graphics on PC, it still looks great four years after release. And best of all: it's still just as fun. [Issue#321]</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Jan 25, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">88</p>
+            <h3 class="text-lg font-semibold">PLAY!Zine</h3>
+            <p class="text-gray-600 text-sm mb-4">PC players have long awaited Spidey to come to their platform, and Insomniac with Nixxes delivers with this port completely and even expands on the audio-visual experience this game has to offer, with Spider-Man looking the best possible so far, despite some of its original problems and few performance issues.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 14, 2022</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">86</p>
+            <h3 class="text-lg font-semibold">TierraGamer</h3>
+            <p class="text-gray-600 text-sm mb-4">Marvel's Spider-Man was already a solid, entertaining, action-packed game with enough storylines to capture your imagination on PS4. The same thing happens with the PC version, but here you will have access to a series of graphic customization options that are not available on PS5. The experience is greatly improved thanks to the diversity of resolutions, making the game visually stunning and an experience that no one should miss.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Aug 31, 2022</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Latest Critic Reviews Section -->
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4" style="margin-left:10px;">Latest User Reviews</h2>
+    <hr class="border-t-2 border-gray-300 my-8 mx-auto" style="width: 100%;">
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Review 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">8</p>
+            <h3 class="text-lg font-semibold">Rassane</h3>
+            <p class="text-gray-600 text-sm mb-4">En general es un buen juego, el combate es bueno, movilidad, la historia está bien, música de spider man de toda la vida. Lo malo de este juego son algunas secundarias, y mundo abierto bastante repetitivo, le faltaba más variedad y tipos de misiones. Los enemigos carecen de complejidad y también son repetitivos. Los bosses están bien pero un poco escripteados para "ganarle".</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 9, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-yellow-500 text-2xl font-bold mb-2">7</p>
+            <h3 class="text-lg font-semibold">Zbiggichan</h3>
+            <p class="text-gray-600 text-sm mb-4">Borderline very good game. The story is satisfying to play, but not the craziest thing (expect two small scenes between Peter Parker and and his employee Dr. Ocatvius, which are brilliant - coffee and tennis balls). The graphics got drastically improved and still looks good in 2024 (which is not true about the original game on Ps4 pro.) The open world gameplay is good, since the movement works so well, the only bad part is the fighting, which is too repetitive in the long term. I would say, one should try this game in general and can guarantee that one will like it, if one likes the swinging + is a spiderman fan.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Oct 3, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">8</p>
+            <h3 class="text-lg font-semibold">ziyddwh</h3>
+            <p class="text-gray-600 text-sm mb-4">Great game to portray Spider-Man. Web swing in the city is so enjoyable and relaxing. Look cool when fighting, but it seems to lack the wow factor to reach a higher score in 2024. Might be great at the year when the game first came.</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>Sep 29, 2024</p>
+                <p class="font-semibold">PC</p>
+            </div>
+        </div>
+
+        {% for com in comment %}
+        <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="text-green-500 text-2xl font-bold mb-2">{{com.score}}</p>
+            <h3 class="text-lg font-semibold">{{com.name}}</h3>
+            <p class="text-gray-600 text-sm mb-4">{{com.des}}</p>
+
+            <!-- Flex container for date and platform -->
+            <div class="flex justify-between text-gray-500 text-sm">
+                <p>{{com.date}}</p>
+                <p class="font-semibold">{{com.platform}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock content %}
